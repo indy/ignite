@@ -1,0 +1,6 @@
+
+%app_name%/
+  child-a/
+    grandchild-a/
+    grandchild-b/
+  child-b/

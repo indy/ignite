@@ -1,0 +1,6 @@
+
+
+%name%/
+  %name%.rb => basic_ruby_file.rb
+  %name%.structure => basic_structure
+  templates/

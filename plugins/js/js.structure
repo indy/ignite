@@ -1,0 +1,12 @@
+
+
+;; all comments begin with ;;
+
+
+%app_name%
+  javascript/
+  stylesheets/
+  images/
+
+;; for additional functionality just derive a class from BaseIgnitor
+;; and place it in this directory 

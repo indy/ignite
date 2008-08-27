@@ -1,0 +1,21 @@
+
+
+
+;; define the file structure you would like
+
+;; comments begin with ;;
+;; directories end with /
+;; white space is important in structure definition
+;; variables are enclosed within % % 
+;; app_name is the 2nd parameter given during ignite invocation
+
+;; here's an example:
+
+
+%app_name%/
+  some_directory/
+    some_file.rb
+
+
+;; in the above example make sure that a file called some_file.rb is in the templates directory of _this_ folder
+

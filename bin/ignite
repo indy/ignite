@@ -1,0 +1,29 @@
+
+
+begin
+  require 'ignite'
+rescue LoadError
+  require 'rubygems'
+  require 'ignite'
+end
+
+include Ignite
+
+BaseIgnitor.load_default_plugins
+BaseIgnitor.load_user_plugins
+
+if ARGV.length < 2
+  BaseIgnitor.display_help
+  exit
+end
+
+# ask appropriate plugin to build skeleton structure 
+ignitor_class = BaseIgnitor.select_plugin(ARGV[0])
+unless ignitor_class
+  puts "unable to find ignite plugin: #{ARGV[0]}"
+  exit
+end
+
+ignitor = ignitor_class.new
+ignitor.ignite(ARGV[1])
+

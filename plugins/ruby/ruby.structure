@@ -1,0 +1,11 @@
+
+%app_name%/
+  pkg/
+  Rakefile
+  lib/
+    %app_name%.rb => app_name.rb
+    %app_name%/
+  test/
+    abstract_unit.rb
+    test_sample.rb
+  bin/
